@@ -1,0 +1,15 @@
+<h2>Cadastro de Usuário</h2>
+
+<form (ngSubmit)="onSubmit()">
+  <div>
+    <label for="nome">Nome:</label>
+    <input id="nome" [(ngModel)]="user.nome" name="nome" required>
+  </div>
+
+  <div>
+    <label for="senha">Senha:</label>
+    <input id="senha" [(ngModel)]="user.senha" name="senha" type="password" required>
+  </div>
+
+  <button type="submit">Cadastrar</button>
+</form>
